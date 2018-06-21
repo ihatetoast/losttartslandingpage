@@ -1,0 +1,53 @@
+$test-color1: blue;
+$test-color2: red;
+$test-color3: green;
+$test-color4: yellow;
+$test-color5: purple;
+@mixin testBox($w, $l) {
+  width: $w;
+  height: $l;
+}
+
+//for sticky footer:
+#site {
+  background-color: $test-color1;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+// HEADER/NAV
+header {
+  background-color: $test-color2;
+}
+#header-img {
+  width: 100px;
+}
+nav {
+  background-color: $test-color5;
+}
+// CONTAINER
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+section {
+  @include testBox(100%, 500px);
+}
+#gallery {
+  background-color: $test-color3;
+}
+#pricing {
+  background-color: $test-color4;
+}
+#testimonials {
+  background-color: $test-color3;
+}
+#contact {
+  background-color: $test-color4;
+}
+//FOOTER
+footer {
+  background-color: $test-color2;
+}
