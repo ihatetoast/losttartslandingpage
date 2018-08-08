@@ -11,11 +11,45 @@ a {
 
 // font-family: 'Raleway', sans-serif;
 //font-family: 'Roboto Slab', serif;
+//http://paletton.com/#uid=33O0n0klgt0vyQhr9Ifu2rKyCpP
+//VARIABLES:
+//colors
+$blue-0: #40579c; // Main Primary color BLUE*/
+$blue-1: #1c4ee3;
+$blue-2: #335ace;
+$blue-3: #193895;
+$blue-4: #0e2e8b;
+
+$yellow-0: #e7ca4e; // Main Secondary color YELLOW */
+$yellow-1: #ffcf04;
+$yellow-2: #ffd527;
+$yellow-3: #ddb50e;
+$yellow-4: #cea600;
+
+$orange-0: #e7a04e; // Main Secondary color ORANGE */
+$orange-1: #ff8a04;
+$orange-2: #ff9b27;
+$orange-3: #dd7d0e;
+$orange-4: #ce6e00;
+$white: #f0f0f0;
+$text: #7e7f7f;
+$link: #113288;
+
 p,
 a {
   font-family: 'Raleway', sans-serif;
 }
+p {
+  color: $text;
+  line-height: 1.5;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+a {
+  color: $link;
+}
 h1 {
+  color: $blue-0;
   font-family: 'Poor Story', serif;
 }
 h2,
@@ -23,12 +57,20 @@ h3,
 h4,
 h5,
 h6 {
+  color: $blue-3;
   font-family: 'Roboto Slab', serif;
+}
+h2{
+  font-size: 1.3em;
+  margin-top: 2em;
+}
+section {
+  padding: 0.5em;
 }
 #header {
   top: 0px;
   position: fixed;
-  background-color: red;
+  background-color: $orange-4;
   width: 100%;
   z-index: 1;
   text-align: center;
@@ -36,7 +78,7 @@ h6 {
   flex-direction: column;
 }
 #header-img {
-  width: 10em;
+  width: 3em;
   border-radius: 50%;
 }
 
@@ -44,11 +86,18 @@ h6 {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  padding: 0.25em;
 }
 #name1,
 #name2 {
-  font-size: 10em;
+  font-size: 3em;
   align-self: center;
+}
+#name1 {
+  margin-right: 0.25em;
+}
+#name2 {
+  margin-left: 0.25em;
 }
 nav ul {
   display: flex;
@@ -56,48 +105,63 @@ nav ul {
 }
 
 nav {
-  background-color: purple;
+  background-color: $orange-0*1.2;
+  padding: 0.5em 1em 0.25em 1em;
 }
 
 .container {
   width: 100%;
   overflow-x: hidden;
   clear: both;
-  margin-top: 50px;
-  background-color: blue;
+  margin-top: 3em;
+  background-color: $white;
   display: flex;
   flex-direction: column;
   flex: 1;
-  margin: 0 auto;
-  padding: 15em 1em;
+  padding: 1em 1em;
+  padding-top: 1em;
 }
 
 section {
   width: 100%;
 }
 
-#about {
-  background-color: yellow;
-}
-
-#gallery {
-  background-color: green;
-}
-
-#pricing {
-  background-color: yellow;
-}
-
-#testimonials {
-  background-color: green;
-}
-
+#about,
+#gallery,
+#pricing,
+#testimonials,
 #contact {
-  background-color: yellow;
+  background-color: $white;
+}
+//GALLERY SECTION
+.gallery_image {
+  display: inline-block;
+  margin: 10px;
+  padding: 5px;
+  border: 10px solid $white;
+  -moz-box-shadow: 0 0 5px $text;
+  -webkit-box-shadow: 0 0 5px$text;
+  box-shadow: 0 0 5px $text;
+}
+
+.image img {
+  display: block;
+}
+.image figcaption {
+  text-align: center;
+  margin-top: 0.5em;
+}
+//TESTIMONIAL SECTION
+.testimonialName{
+  font-weight: bold;
+  color: black;
 }
 
 footer {
-  background-color: red;
+  background-color: $yellow-1;
+  padding: 0.25em;
+  font-size: 0.5em;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
