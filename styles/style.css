@@ -8,11 +8,11 @@ a {
   text-decoration: none; }
 
 p,
-a {
+a, li {
   font-family: 'Raleway', sans-serif; }
 
 p {
-  color: #7e7f7f;
+  color: #444444;
   line-height: 1.5;
   margin-top: 0.5em;
   margin-bottom: 0.5em; }
@@ -34,10 +34,39 @@ h6 {
 
 h2 {
   font-size: 1.3em;
-  margin-top: 2em; }
+  margin-top: 2em;
+  margin-bottom: 0.5em; }
 
 section {
   padding: 0.5em; }
+
+.strong {
+  color: #ce6e00;
+  font-weight: bold;
+  margin-left: 0.7em; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto Slab', serif;
+  align-items: flex-start; }
+  form label {
+    font-size: 1.2em;
+    margin-bottom: 0.5em; }
+
+#email {
+  margin-bottom: 0.5em;
+  width: 25em; }
+
+#submit {
+  border: 3px solid #ce6e00;
+  background-color: #e7a04e;
+  color: #193895;
+  border-radius: 10px;
+  padding: 0.2em;
+  font-size: 1.2em;
+  margin-top: 0.25em;
+  font-family: 'Roboto Slab', serif; }
 
 #header {
   top: 0px;
@@ -100,21 +129,65 @@ section {
 #contact {
   background-color: #f0f0f0; }
 
-.gallery_image {
-  display: inline-block;
-  margin: 10px;
-  padding: 5px;
+iframe {
+  width: 325px;
+  height: 182.81px; }
+
+.prices-grid {
+  display: flex;
+  flex-direction: column; }
+
+.price-block {
   border: 10px solid #f0f0f0;
-  -moz-box-shadow: 0 0 5px #7e7f7f;
-  -webkit-box-shadow: 0 0 5px #7e7f7f;
-  box-shadow: 0 0 5px #7e7f7f; }
+  -moz-box-shadow: 0 0 5px #444444;
+  -webkit-box-shadow: 0 0 5px #444444;
+  box-shadow: 0 0 5px #444444;
+  background-color: white; }
+  .price-block ul {
+    margin: 0.25em; }
 
-.image img {
-  display: block; }
+.price-desc, .price-para {
+  padding: 0.5em 1em; }
 
-.image figcaption {
+.price-title {
+  background-color: #e7ca4e;
+  padding: 0.35em;
   text-align: center;
-  margin-top: 0.5em; }
+  font-size: 1.4em; }
+
+.list-title {
+  color: #40579c;
+  font-weight: bold;
+  margin-top: 0.25em; }
+  .list-title li {
+    color: #444444;
+    line-height: 1.25em; }
+
+.gallery-grid, .gallery_image {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.gallery-grid {
+  padding: 0 1em; }
+
+.gallery_image {
+  margin: 0.625em;
+  padding: 0.45em;
+  background-color: white;
+  border: 10px solid #f0f0f0;
+  -moz-box-shadow: 0 0 5px #444444;
+  -webkit-box-shadow: 0 0 5px #444444;
+  box-shadow: 0 0 5px #444444;
+  width: 100%; }
+  .gallery_image img {
+    display: block;
+    width: 15em; }
+  .gallery_image figcaption {
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.75em;
+    margin-top: 0.5em;
+    text-align: center; }
 
 .testimonialName {
   font-weight: bold;

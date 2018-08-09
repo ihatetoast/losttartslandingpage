@@ -32,11 +32,11 @@ $orange-2: #ff9b27;
 $orange-3: #dd7d0e;
 $orange-4: #ce6e00;
 $white: #f0f0f0;
-$text: #7e7f7f;
+$text: #444444;
 $link: #113288;
 
 p,
-a {
+a, li {
   font-family: 'Raleway', sans-serif;
 }
 p {
@@ -63,9 +63,40 @@ h6 {
 h2{
   font-size: 1.3em;
   margin-top: 2em;
+      margin-bottom: 0.5em;
 }
 section {
   padding: 0.5em;
+}
+.strong{
+  color: $orange-4;
+  font-weight: bold;
+  margin-left: 0.7em;
+}
+
+form{
+  display:flex;
+  flex-direction: column;
+  font-family: 'Roboto Slab', serif;
+  align-items: flex-start;
+  label{
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+  }
+}
+#email{
+  margin-bottom: 0.5em;
+  width: 25em;
+}
+#submit{
+  border: 3px solid $orange-4;
+  background-color: $orange-0;
+  color: $blue-3;
+  border-radius: 10px;
+  padding: 0.2em;
+  font-size: 1.2em;
+  margin-top: 0.25em;
+  font-family: 'Roboto Slab', serif;
 }
 #header {
   top: 0px;
@@ -133,24 +164,83 @@ section {
 #contact {
   background-color: $white;
 }
-//GALLERY SECTION
-.gallery_image {
-  display: inline-block;
-  margin: 10px;
-  padding: 5px;
+//ABOUT SECTION
+iframe{
+  width:325px;
+  height:182.81px; 
+}
+//PRICE SECTION
+
+.prices-grid{
+display:flex;
+flex-direction: column;
+}
+.price-block{
   border: 10px solid $white;
   -moz-box-shadow: 0 0 5px $text;
   -webkit-box-shadow: 0 0 5px$text;
   box-shadow: 0 0 5px $text;
+  background-color: white;
+  
+  ul{
+    margin: 0.25em;
+  }
+
+}
+.price-desc, .price-para{
+  
+  padding: 0.5em 1em;
 }
 
-.image img {
-  display: block;
+.price-title{
+      background-color: $yellow-0;
+    padding: 0.35em;
+    text-align: center;
+    font-size: 1.4em;
 }
-.image figcaption {
-  text-align: center;
-  margin-top: 0.5em;
+.list-title {
+  color: $blue-0;
+  font-weight: bold;
+  margin-top: 0.25em;
+  li{
+    color: $text;
+    line-height: 1.25em;
+  }
 }
+//GALLERY SECTION
+.gallery-grid, .gallery_image{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery-grid{
+     padding: 0 1em;
+}
+
+.gallery_image {
+  margin: 0.625em;
+  padding: 0.45em;
+  background-color: white;
+  border: 10px solid $white;
+  -moz-box-shadow: 0 0 5px $text;
+  -webkit-box-shadow: 0 0 5px$text;
+  box-shadow: 0 0 5px $text;
+  width: 100%;
+  img{
+    display: block;
+    width: 15em;
+  }
+  figcaption {
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.75em;
+    margin-top: 0.5em;
+    text-align: center;
+  }
+
+}
+
+
+
 //TESTIMONIAL SECTION
 .testimonialName{
   font-weight: bold;
