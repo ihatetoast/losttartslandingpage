@@ -131,6 +131,14 @@ nav {
   @media screen and (min-width: 759px) {
     .container {
       margin-top: 4em; } }
+  @media screen and (min-width: 1024px) {
+    .container {
+      padding-right: 5em;
+      padding-left: 5em; } }
+  @media screen and (min-width: 1400px) {
+    .container {
+      padding-right: 15em;
+      padding-left: 15em; } }
 
 section {
   width: 100%; }
@@ -233,6 +241,9 @@ iframe {
   @media screen and (min-width: 759px) {
     .gallery_image {
       width: 47%; } }
+  @media screen and (min-width: 1024px) {
+    .gallery_image {
+      width: 30%; } }
   .gallery_image img {
     display: block;
     width: 100%; }
@@ -251,6 +262,10 @@ footer {
   padding: 0.25em;
   font-size: 0.5em;
   text-align: center; }
+  @media screen and (min-width: 1024px) {
+    footer {
+      font-size: 1em;
+      padding: 1em; } }
 
 /*# sourceMappingURL=style.css.map */
 
