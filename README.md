@@ -12,7 +12,7 @@ Landing page built with a mobile-first approach.
 
 
 ![alt text](./assets/losttarts_mob.png "I want someone to make this a real store.")
-![alt text](./assets/losttarts_tablet.png "Flexbox makes me happy.")
+![alt text](./assets/losttarts_laptop.png "Flexbox makes me happy.")
 ![alt text](./assets/losttarts_desktop.png "Are these silly prices? I need to retire soon.")
 
 Toolbox:
