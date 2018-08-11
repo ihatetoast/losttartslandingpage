@@ -1,15 +1,25 @@
 # Product Landing Page
 
-[deployed on Surge](http://ihatetoast-LostTartsLandingPage.surge.sh/)
+[deployed on Surge](http://ihatetoast-losttartslandingpage.surge.sh/)
 
 Free Code Camp's Responsive Web Design Certification project
 
-A very simple tribute page for the great John Cleese. I completed this several years ago; however, I decided I wanted a copy on GitHub as well as [CodePen](https://codepen.io/ihatetoast/full/RRmgYK/).
+## Lost Tarts
 
-Colors used to reflect what I imagine a 70s business suit and shirt would look like.
+An HTML/CSS-only landing page for the Responsive Web Design certification. Colors chosen remind me of 70s crochet and craft patterns. 
+
+Landing page built with a mobile-first approach. 
+
+
+![alt text](./assets/losttarts_mob.png "I want someone to make this a real store.")
+![alt text](./assets/losttarts_tablet.png "Flexbox makes me happy.")
+![alt text](./assets/losttarts_desktop.png "Are these silly prices? I need to retire soon.")
 
 Toolbox:
 
 - HTML5
-- CSS (No Sass! Kept it painfully basic)
+- CSS
+- Sass
+- Flexbox
+
 
